@@ -10947,6 +10947,7 @@ html .range-80>[class*="cell-"] {
 .rd-navbar-default.rd-navbar-fixed .rd-navbar-toggle {
   position: fixed;
   z-index: 17;
+  float: right;
   top: 4px;
   left: 4px;
   display: inline-block;
@@ -12554,6 +12555,15 @@ screen and (max-height: 300px) {
   padding-top: 0;
 }
 
+.vac-list {
+  padding-top: 55px;
+}
+
+.vac-list h3{
+  margin-bottom: 45px;
+  font-size: 24px;
+}
+
 .vac-list .vac-block {
   position: relative;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -12574,6 +12584,7 @@ screen and (max-height: 300px) {
 
 .vac-list .vac-block a {
   color: #24a3d8;
+  font-size: 14px;
 }
 
 .vac-list .vac-block a:hover {
@@ -12582,15 +12593,73 @@ screen and (max-height: 300px) {
 
 .vac-list .vac-block .vac-title {
   font-weight: 900;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .vac-list .vac-block .more {
-  margin-top: 30px;
+  margin-top: 25px;
+}
+
+.table-form-d .button-sm.button-primary-filled {
+  float: right;
+}
+
+@media screen and (max-width: 1200px) {
+  .rd-navbar-default.rd-navbar-fixed .rd-navbar-panel>a>img {
+    max-height: 56px;
+  }
 }
 
 @media screen and (max-width: 991px) {
   .shell-wide-2 .order-three{
     order: 3;
+    text-align: center;
+  }
+  .banner {
+    padding: 35px 25px;
+  }
+  .order-two {
+    order: 2;
+  }
+  .vac-list {
+    text-align: center;
+    padding-top: 0;
+  } 
+  .vac-list .vac-block:after {
+    right: 0;
+    margin: auto
+  }
+  .rd-navbar-default.rd-navbar-fixed .rd-navbar-panel>a>img {
+    max-height: 56px;
+  }
+  .vac-list h3 {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+}
+
+
+@media screen and (max-width: 1799px) {
+  .table-form-d {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .table-form-d {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .table-form-d {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .table-form-d {
+    width: 100%;
   }
 }
